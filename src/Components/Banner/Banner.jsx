@@ -1,18 +1,71 @@
-import React from 'react';
-import background from '../../assets/all_Img/etcMetarial/bol-bg.png';
+import React from "react";
+import background from "../../assets/all_Img/etcMetarial/bol-bg.png";
+import arrow_left from "../../assets/all_Img/etcMetarial/arrow-left.png";
+import arrow_right from "../../assets/all_Img/etcMetarial/arrow-right.png";
+import arrowBg from "../../assets/all_Img/etcMetarial/arrowBg.png";
+import shadow from "../../assets/all_Img/etcMetarial/shadow.png";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Banner = () => {
   return (
-    <div>
-      <div className='h-96'
+    <div className="max-w-screen-xl mx-auto">
+      <div
+        className="flex items-center justify-between h-96"
         style={{
           backgroundImage: `url(${background})`, // Corrected style syntax
-          backgroundRepeat: 'no-repeat',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi iste. Harum sequi ipsum eum, ex deleniti aperiam optio blanditiis ullam ab quos inventore officiis temporibus ea aliquam animi itaque quas, omnis quae ratione voluptatibus dolore ut consectetur. Ipsum officiis explicabo maxime rerum dolores quam odio tempore minus, nesciunt, qui aliquid nihil. Deserunt deleniti, minus, atque consectetur enim obcaecati, veritatis error fugit sit quasi rerum quaerat commodi tenetur adipisci maxime? Minima asperiores eaque qui, atque ullam temporibus ex eum reprehenderit ipsa reiciendis quidem magni distinctio eius, quam corrupti sapiente obcaecati est quia iste ratione nostrum dolorum exercitationem et minus? Odit?
-        </p>
+        {/* arrow left side  */}
+        <div
+          style={{
+            backgroundImage: `url(${arrowBg})`, // Corrected style syntax
+          }}
+        >
+          <img src={arrow_left} alt="" />
+        </div>
+        {/* center content  */}
+        <div className="text-center relative z-50">
+          <button className="border border-[#31F6FC] px-4 py-1 rounded-full font-light text-white">
+            DexToolsBot
+          </button>
+          <h1 className="text-5xl font-semibold text-white leading-snug">
+            The Fastest Trading <br />{" "}
+            <span className="text-[#31F6FC]">DEXTools BOT</span>
+          </h1>
+          <p className="font-light leading-normal text-sm py-2">
+            It is a long established fact that a reader will be distracted bythe
+            readable <br /> content of a page when looking at its layout The
+            point of using Lorem Ipsum is that it <br /> has a more-or-less
+            normal distribution
+          </p>
+          <div className="flex items-center gap-5 justify-center py-8">
+            <button className="flex items-center gap-2 rounded-full px-6 py-2 border font-light text-white border-gray-500">
+              Start Trading <HiOutlineArrowNarrowRight />
+            </button>
+
+            <button className="flex bg-gradient-to-tl to-[#31F6FC] from-[#0AA2C8] items-center gap-2 rounded-full px-6 py-2  font-light text-white border-opacity-10">
+              {" "}
+              Explore More <HiOutlineArrowNarrowRight />
+            </button>
+          </div>
+
+          <div className="absolute left-0 right-0 bottom-0 top-16 rounded-full ">
+            <img src={shadow} alt="" />
+          </div>
+        </div>
+
+        {/* arrow right side  */}
+        <div
+          className="mt-20"
+          style={{
+            backgroundImage: `url(${arrowBg})`, // Corrected style syntax
+          }}
+        >
+          <img src={arrow_right} alt="" />
+        </div>
       </div>
     </div>
   );
