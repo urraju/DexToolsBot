@@ -6,6 +6,7 @@ import arrowBg from "../../assets/all_Img/etcMetarial/arrowBg.png";
 import shadow from "../../assets/all_Img/etcMetarial/shadow.png";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import BannerTow from "./BannerTow";
+import Button from "../Layouts/Button/Button";
 
 const Banner = () => {
   return (
@@ -15,7 +16,7 @@ const Banner = () => {
         style={{
           backgroundImage: `url(${background})`, // Corrected style syntax
           backgroundRepeat: "no-repeat",
-         
+
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
@@ -31,9 +32,7 @@ const Banner = () => {
           </div>
           {/* center content  */}
           <div className="text-center relative z-50">
-            <button className="border border-[#31F6FC] px-4 py-1 rounded-full font-light text-white">
-              DexToolsBot
-            </button>
+            <Button buttonText={"DexToolsBot"} />
             <h1 className="text-5xl font-semibold text-white leading-snug">
               The Fastest Trading <br />{" "}
               <span className="text-[#31F6FC]">DEXTools BOT</span>

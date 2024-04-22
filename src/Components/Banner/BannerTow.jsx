@@ -4,16 +4,16 @@ const BannerTow = () => {
   return (
     <div className="flex items-center justify-center">
       <div
-      className="w-full z-50 py-5 "
+      className="w-full z-50 py-5 statsCardBorder "
         style={{
           backgroundImage: `url(${bannerBg})`, // Corrected style syntax
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "content",
-          border : 'jss144'
+          border : 'statsCardBorder'
         }}
       >
-        <img className="mx-auto" src={bannerMobile} alt="" />
+        <img className="mx-auto  " src={bannerMobile} alt="" />
       </div>
     </div>
   );

@@ -6,10 +6,10 @@ import shadow from "../../../assets/all_Img/etcMetarial/shadow.png";
 
 const Stats = () => {
   return (
-    <div className=" py-14">
-      <div className="max-w-screen-xl mx-auto statsCardBorder  rounded-lg overflow-hidden relative">
-        <div className="p-10">
-          <h1 className="text-center text-white text-2xl py-2">
+    <div className="py-14">
+      <div className="max-w-screen-xl mx-auto statsCardBorder  overflow-hidden relative ">
+        <div className=" p-20 h-[364px]">
+          <h1 className="text-center text-white text-2xl mb-5">
             Our Current Stats
           </h1>
 
