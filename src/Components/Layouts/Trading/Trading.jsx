@@ -26,9 +26,9 @@ const Trading = () => {
             Trading in the foreign <br /> exchange market
           </p>
           {/* main content section  */}
-          <div className="flex justify-between w-full mt-20">
+          <div className="flex justify-between gap-10 md:gap-0 flex-col-reverse md:flex-row w-full mt-20">
             {/* left site content  */}
-            <div className="flex flex-col gap-16">
+            <div className="flex flex-col gap-8 md:gap-16">
               {/* card one  */}
               <div className="flex justify-between items-center py-4 px-4 md:w-[430px] border rounded-xl border-gray-700 hover:bg-gradient-to-tl duration-200 hover:to-[#31F6FC] hover:from-[#0AA2C8]">
                 <div className="flex gap-4 items-center">
@@ -67,8 +67,8 @@ const Trading = () => {
             <div className="relative z-30">
               <img className="z-20 -mt-8" src={maskGroup} alt="" />
               <div>
-                <img className="absolute bottom-8 -left-24 z-20" src={maskLeft} alt="" />
-                <img className="absolute top-20 -right-24" src={maskRight} alt="" />
+                <img className=" absolute hidden md:block bottom-8 -left-24 z-20" src={maskLeft} alt="" />
+                <img className="absolute hidden md:block top-20 -right-24" src={maskRight} alt="" />
                 <div className="bg-gradient-to-tl to-[#11323416] from-[#113234] h-96 bottom-0 rounded-xl -z-10 w-full absolute"></div>
               </div>
             </div>
