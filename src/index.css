@@ -6,5 +6,46 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background:  #0A1E29;
+  background: #0a1e29;
+}
+.statsBorder {
+  height: px; /* You should specify a height value, e.g., height: 100px; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 12px;
+  background: 
+  
+  /* Top and bottom border with black color */ linear-gradient(
+      rgba(1, 29, 47, 0),
+      rgb(94, 94, 94),
+      rgba(1, 38, 57, 0.002)
+    )
+    border-box;
+}
+.statsCardBorder {
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 12px;
+  background: linear-gradient(#0a1e29, #0a1e29) border-box content-box,
+    linear-gradient(
+        90deg,
+        rgba(0, 12, 20, 0) -50.03%,
+        rgba(0, 6, 8, 0),
+        #04ccd396,
+        rgba(0, 18, 27, 0)
+      )
+      border-box,
+    linear-gradient(
+        rgba(0, 12, 20, 0) -50.03%,
+        rgba(0, 6, 8, 0.012),
+        #04ccd396,
+        rgba(0, 18, 27, 0)
+      )
+      border-box;
+  
 }
