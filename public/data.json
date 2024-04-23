@@ -1,0 +1,50 @@
+[
+  {
+    "title": "What Are Sun Salutations? Start Your Day Right...",
+    "description": "It’s a simple question that we get asked a lot as yoga instructors. What is a Sun Salutation and why is it important?",
+    "time": "April 7, 2024",
+    "minute": 5,
+    "img": "https://i.ibb.co/cYLzTLH/card-Img-1.png",
+    "id": "1"
+  },
+  {
+    "title": "The Benefits of Drinking Water: Why Hydration is Important",
+    "description": "Staying hydrated is crucial for overall health and well-being. Discover the benefits of drinking enough water daily.",
+    "time": "April 8, 2024",
+    "minute": 7,
+    "img": "https://i.ibb.co/FXDksPS/card-Img-2.png",
+    "id": "2"
+  },
+  {
+    "title": "Effective Workout Routines for Beginners",
+    "description": "Starting a fitness journey? Here are some effective workout routines tailored for beginners to kickstart your fitness goals.",
+    "time": "April 9, 2024",
+    "minute": 8,
+    "img": "https://i.ibb.co/cYLzTLH/card-Img-1.png",
+    "id": "3"
+  },
+  {
+    "title": "Healthy Eating: Tips for a Balanced Diet",
+    "description": "Eating a balanced diet is essential for maintaining good health. Learn some tips for healthy eating and nourish your body.",
+    "time": "April 10, 2024",
+    "minute": 6,
+    "img": "https://i.ibb.co/FXDksPS/card-Img-2.png",
+    "id": "4"
+  },
+  {
+    "title": "Introduction to Mindfulness Meditation",
+    "description": "Mindfulness meditation can help reduce stress and improve mental well-being. Start your mindfulness journey today.",
+    "time": "April 11, 2024",
+    "minute": 10,
+    "img": "https://i.ibb.co/cYLzTLH/card-Img-1.png",
+    "id": "5"
+  },
+  {
+    "title": "Tips for Improving Sleep Quality",
+    "description": "Quality sleep is vital for overall health and productivity. Discover some tips for improving your sleep quality.",
+    "time": "April 12, 2024",
+    "minute": 7,
+    "img": "https://i.ibb.co/FXDksPS/card-Img-2.png",
+    "id": "6"
+  }
+]

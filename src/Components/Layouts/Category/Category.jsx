@@ -1,42 +1,37 @@
 import "./category.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Button from "../Button/Button";
+ 
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
-import { useState } from "react";
 const Category = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
+  
+
   return (
-    <div>
-      <>
-        <Swiper
-          onSwiper={setSwiperRef}
-          slidesPerView={3}
-          centeredSlides={true}
-          spaceBetween={30}
-          pagination={{
-            type: "fraction",
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide></SwiperSlide>
-        </Swiper>
-      </>
-      <Tabs>
-        <TabList>
-          <Tab>Title 1</Tab>
-          <Tab>Title 1</Tab>
-          <Tab>Title 1</Tab>
-          <Tab>Title 1</Tab>
-        </TabList>
-      </Tabs>
+    <div className="max-w-screen-xl mx-auto">
+      <div className="bg-gradient-to-r max-w-screen-md mx-auto h-[2px] to-[#31f5fc00] via-[#31F6FC] from-[#31f5fc00]"></div>
+      <h1 className="text-center text-white text-2xl font-semibold py-4 mt-10">
+        Academy Categories
+      </h1>
+      <div className="mt-10">
+        <Tabs>
+          <TabList className="flex justify-center flex-wrap gap-5">
+            <Tab>AML</Tab>
+            <Tab>Arbitrage</Tab>
+            <Tab>ASIC</Tab>
+            <Tab>ATH</Tab>
+            <Tab>ATL</Tab>
+            <Tab>AXIE INFINITY</Tab>
+          </TabList>
+        </Tabs>
+        <div className="text-white flex flex-col items-center justify-center mt-10">
+          <Button buttonText={"Academy"} />
+          <h1 className="text-center py-4 text-4xl font-semibold">
+            Our Academy Area
+          </h1>
+        </div>
+      </div>
+       
     </div>
   );
 };
