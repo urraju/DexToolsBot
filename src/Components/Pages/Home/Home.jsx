@@ -9,7 +9,7 @@ import Trading from "../../Layouts/Trading/Trading";
 
 const Home = () => {
     return(
-        <div>
+        <div className="px-2 md:px-0">
              <Banner/>
              <Stats/>
              <Trading/>
