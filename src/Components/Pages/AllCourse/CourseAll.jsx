@@ -4,7 +4,7 @@ import { MdDateRange } from "react-icons/md";
 const CourseAll = () => {
   const data = useLoaderData();
   return (
-    <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
+    <div className="max-w-screen-xl py-20 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
       {data.map((data) => (
         <div key={data.id} className="border rounded-xl  statsCardBorder">
           <div className="p-4">
