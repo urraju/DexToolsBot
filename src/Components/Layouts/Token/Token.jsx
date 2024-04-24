@@ -34,12 +34,12 @@ const Token = () => {
             <br />
             the features of the app and participate.
           </p>
-          <div className="flex items-center gap-5  py-8">
-            <button className="flex bg-gradient-to-tl to-[#31F6FC] from-[#0AA2C8] items-center gap-2 rounded-full px-6 py-3  font-light text-white border-opacity-10">
+          <div className="md:flex items-center gap-5   py-8">
+            <button className="flex justify-center bg-gradient-to-tl w-64 mb-4 md:w-52 md:mb-0 to-[#31F6FC] from-[#0AA2C8] items-center gap-2 rounded-full px-6 py-3  font-light text-white border-opacity-10">
               {" "}
               Buy At Uniswap
             </button>
-            <button className="flex items-center gap-2 rounded-full px-6 py-3 border font-light text-white border-gray-500">
+            <button className="flex items-center justify-center  gap-2  mb-4 w-64 md:mb-0 rounded-full px-6 py-3 border font-light text-white border-gray-500">
               Buy At Pancakeswap
             </button>
           </div>

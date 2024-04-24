@@ -21,7 +21,7 @@ const Banner = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex items-center justify-between ">
+        <div className="w-full flex items-center justify-center md:justify-between ">
           {/* arrow left side  */}
           <div
             style={{
@@ -43,19 +43,19 @@ const Banner = () => {
               The point of using Lorem Ipsum is that it <br /> has a
               more-or-less normal distribution
             </p>
-            <div className="flex items-center gap-5 justify-center py-8">
-              <button className="flex items-center gap-2 rounded-full px-6 py-2 border font-light text-white border-gray-500">
+            <div className="w-full  md:flex items-center gap-5 justify-center py-8">
+              <button className="flex items-center gap-2 rounded-full px-6 py-2 border font-light text-white border-gray-500 w-full mb-4 md:w-52 md:mb-0 justify-center">
                 Start Trading <HiOutlineArrowNarrowRight />
               </button>
 
-              <button className="flex bg-gradient-to-tl to-[#31F6FC] from-[#0AA2C8] items-center gap-2 rounded-full px-6 py-2  font-light text-white border-opacity-10">
+              <button className="flex bg-gradient-to-tl to-[#31F6FC] from-[#0AA2C8] items-center gap-2 rounded-full px-6 py-2  font-light text-white border-opacity-10 w-full mb-4 md:w-52 md:mb-0 justify-center">
                 {" "}
                 Explore More <HiOutlineArrowNarrowRight />
               </button>
             </div>
 
             <div className="absolute left-0 right-0 bottom-0 top-16 rounded-full ">
-              <img src={shadow} alt="" />
+              <img className="opacity-80 w-full  ] " src={shadow} alt="" />
             </div>
           </div>
 

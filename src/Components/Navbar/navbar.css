@@ -39,7 +39,7 @@
 
 .log-sign {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   flex: 1;
@@ -244,7 +244,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .hamburger-menu-container {
     display: flex;
   }
@@ -362,11 +362,12 @@
   .dropdown-link:hover > a {
     background-color: #04b3fa;
   }
+  
 
   .log-sign {
     width: 100%;
     display: flex;
-    flex: 7;
+     
     background-color: rgb(0, 57, 69);
     opacity: 0;
     transform: translateY(15px);

@@ -7,13 +7,13 @@ import shadow from "../../../assets/all_Img/etcMetarial/shadow.png";
 const Stats = () => {
   return (
     <div className="py-14">
-      <div className="max-w-screen-xl mx-auto statsCardBorder  overflow-hidden relative ">
-        <div className=" p-20 h-[364px]">
+      <div className="max-w-screen-xl mx-auto statsCardBorder overflow-hidden relative ">
+        <div className=" p-10 md:p-20 md:h-[364px]">
           <h1 className="text-center text-white text-2xl mb-5">
             Our Current Stats
           </h1>
 
-          <div className=" flex justify-between items-center flex-wrap gap-10 md:gap-0 ">
+          <div className=" md:flex grid grid-cols-2 md:grid-cols-4 justify-between items-center flex-wrap gap-10 md:gap-0 ">
             {/* card one  */}
             <div className="text-center ">
               <img
@@ -25,7 +25,7 @@ const Stats = () => {
               <p className="text-white font-light text-sm">Visitor Per Month</p>
             </div>
 
-            <div className="statsBorder h-24 "></div>
+            <div className="statsBorder h-24 hidden md:block "></div>
 
             {/* card 2  */}
             <div className="text-center ">
@@ -37,7 +37,7 @@ const Stats = () => {
               <p className="text-white font-medium text-2xl">77</p>
               <p className="text-white font-light text-sm">Blockchains</p>
             </div>
-            <div className="statsBorder h-24 hidden md:flex"></div>
+            <div className="statsBorder h-24 hidden md:block"></div>
 
             {/* card 3 */}
 
@@ -50,7 +50,7 @@ const Stats = () => {
               <p className="text-white font-medium text-2xl">2,422,448</p>
               <p className="text-white font-light text-sm">Pools</p>
             </div>
-            <div className="statsBorder h-24"></div>
+            <div className="statsBorder h-24 hidden md:block"></div>
 
             {/* card 4  */}
             <div className="text-center ">
