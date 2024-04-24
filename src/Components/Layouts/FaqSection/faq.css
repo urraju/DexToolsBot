@@ -1,0 +1,18 @@
+ 
+/* Checked state */
+.custom-radio:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #31F6FC; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Title color when radio is checked */
+.custom-radio:checked + .collapse-title {
+  color: #31F6FC; 
+}

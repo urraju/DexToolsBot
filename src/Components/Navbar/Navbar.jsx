@@ -1,91 +1,164 @@
-import { GiHamburgerMenu } from "react-icons/gi";
-
-import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
-
+import "./navbar.css";
+import logo from "../../assets/all_Img/etcMetarial/logo.png";
 const Navbar = () => {
   return (
-    <div className="px-2 md:px-5">
-      <div className="flex items-center z-30  justify-between lg:py-3   max-w-screen-2xl mx-auto">
-        <div className="  flex justify-between font-inter z-30 items-center w-[90%] lg:w-[30%]  mx-auto flex-row-reverse lg:flex-row">
-          <div className="block lg:hidden ">
-            <div className="drawer drawer-end">
-              <input
-                id="my-drawer-4"
-                type="checkbox"
-                className="drawer-toggle"
-              />
-              <div className="drawer-content">
-                <label htmlFor="my-drawer-4" className="drawer-button text-2xl">
-                  <GiHamburgerMenu />
-                </label>
-              </div>
-              <div className="drawer-side mt-16">
-                <label
-                  htmlFor="my-drawer-4"
-                  aria-label="close sidebar"
-                  className="drawer-overlay"
-                ></label>
-
-                {/* Mobile version navbar  */}
-                <ul className="menu p-4 z-30 w-[100%] md:w-[60%] flex-col gap-2 min-h-full  backdrop-blur bg-black/30  text-white text-sm">
-                  <>
-                    <div className="flex gap-5   items-center  justify-center">
-                      <div className=" border border-orange-500  rounded-[50%] w-[40px] h-[40px]">
-                        {/* <img
-                            src={user.photoURL}
-                            title={user.email}
-                            className="w-full h-full rounded-[50%]"
-                          /> */}
-                      </div>
-                      <h1 className="text-xl text-medium text-white"></h1>
-                    </div>
-
-                    <Link
-                      to="/"
-                      className="py-1 px-5 border-orange-500 border-opacity-40  border text-center hover:bg-orange-500 rounded "
-                    >
-                      Home
-                    </Link>
-                    <Link
-                      to="/myproduct"
-                      className="py-1 px-5 border-orange-500 border-opacity-40  border text-center hover:bg-orange-500 rounded"
-                    >
-                      My Products
-                    </Link>
-
-                    <Link
-                      to="/buynow"
-                      className="py-1 px-5 border-orange-500 border-opacity-40  border  text-center hover:bg-orange-500 rounded"
-                    >
-                      <div className="indicator">
-                        <button className="py-1 px-3 border-orange-500 border-opacity-40  border text-center text-white rounded">
-                          <FaShoppingCart />
-                        </button>
-                        <span className="indicator-item badge badge- bottom-0"></span>
-                      </div>
-                    </Link>
-                  </>
-                </ul>
-              </div>
-            </div>
+    <div className="header">
+      <nav className="nav-container  ">
+        <input type="checkbox" name="" id="check" />
+        <div className="lg:logo-container flex-1">
+          <img
+            width={300}
+            height={300}
+            src={logo}
+            alt="logo"
+             
+          />
+        </div>
+        <div className="nav-btn">
+          <div className="nav-links">
+            <ul>
+              <li className="nav-link" style={{ "--i": " .85s" }}>
+                <a href="#">
+                  Plan
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Roadmap</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Token</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">About Us</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+              <li className="nav-link" style={{ "--i": " 1.1s" }}>
+                <a href="#">
+                  App
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Patient Records</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Add New Patient</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Search Patients</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+              <li className="nav-link" style={{ "--i": "1.40s" }}>
+                <a href="#">
+                  Roadmap
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Lab Tests</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Test Results</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Add New Test</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+              <li className="nav-link" style={{ "--i": "1.88s" }}>
+                <a href="#">
+                  Token
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Doctor Profiles</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Add New Doctor</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Search Doctors</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+              <li className="nav-link" style={{ "--i": " 2.2s" }}>
+                <a href="#">
+                  About Us
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Generate Invoices</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Payment History</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Financial Reports</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+              <li className="nav-link" style={{ "--i": "2.45s" }}>
+                <a href="#">
+                  App
+                  <i className="ri-arrow-down-s-line dropdown-arrow"></i>
+                </a>
+                {/* <div className="dropdown">
+                  <ul>
+                    <li className="dropdown-link">
+                      <a href="#">Manage Inventory</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Stock Status</a>
+                    </li>
+                    <li className="dropdown-link">
+                      <a href="#">Order Supplies</a>
+                    </li>
+                    <div className="arrow"></div>
+                  </ul>
+                </div> */}
+              </li>
+            </ul>
           </div>
-          {/* logo part  */}
-          <Link to="/">
-            <div className="flex items-center gap-5">
-              {/* <img src={icon} alt="" className="md:w-20 w-16" /> */}
-              <h1 className="text-lg md:text-2xl first-letter:text-3xl uppercase font-semibold tracking-wider">
-                <span className="text-orange-500 ">E</span>M.com
-              </h1>
-            </div>
-          </Link>
+          <div className="log-sign w-full   " style={{ "--i": "3.27s" }}>
+            <button className="  rounded-full px-6 py-2 border font-light text-white border-gray-500">
+              Start Trading  
+            </button>
+
+            <button className=" bg-gradient-to-tl to-[#31F6FC] from-[#0AA2C8]  rounded-full px-6 py-2  font-light text-white border-opacity-10">
+              {" "}
+              Contact 
+            </button>
+          </div>
         </div>
-        {/* desktop version navbar  */}
-        <div className="hidden lg:flex w-[70%]">
-          <ul className="w-full flex uppercase gap-4 font-semibold font-inter items-center justify-end text-[15px]"></ul>
+        <div className="hamburger-menu-container">
+          <div className="hamburger-menu">
+            <div></div>
+          </div>
         </div>
-      </div>
+        
+      </nav>
     </div>
   );
 };
+
 export default Navbar;

@@ -3,7 +3,6 @@ import { IoTimeOutline } from "react-icons/io5";
 import { MdDateRange } from "react-icons/md";
 const CourseAll = () => {
   const data = useLoaderData();
-  console.log(data);
   return (
     <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
       {data.map((data) => (

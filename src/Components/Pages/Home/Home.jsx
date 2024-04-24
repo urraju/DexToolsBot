@@ -1,6 +1,7 @@
 import Banner from "../../Banner/Banner";
 import AcademicCourse from "../../Layouts/AcademicCourse/AcademicCourse";
 import Category from "../../Layouts/Category/Category";
+import FaqSection from "../../Layouts/FaqSection/FaqSection";
 import Patners from "../../Layouts/Patners/Patners";
 import Stats from "../../Layouts/Stats/Stats";
 import TeamMember from "../../Layouts/TeamSection/TeamMember";
@@ -18,6 +19,7 @@ const Home = () => {
              <TeamMember/>
              <Category/>
              <AcademicCourse/>
+             <FaqSection/>
         </div>
     )}
 export default Home;

@@ -10,7 +10,7 @@ import Button from "../Layouts/Button/Button";
 
 const Banner = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto py-14 mt-10">
       <div
         className="my-10  z-50"
         style={{

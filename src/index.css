@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+ .collapse-title:checked{
+  background: #31F6FC;
+  color: #31F6FC;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #0a1e29;
